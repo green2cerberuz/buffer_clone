@@ -30,3 +30,5 @@
 
 .env
 .env*.*
+.ash_history
+.irb_history
