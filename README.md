@@ -1,24 +1,32 @@
-# README
+# Buffer Clone
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a clone app of the buffer service to schedule tweets.
+This project is based on gorails course "rails for beginners".
+App is containerized so you can download the repo and run docker-compose
+to launch the app and begin to develop.
 
-Things you may want to cover:
+## Requirements
 
-* Ruby version
+1. Docker Compose.
+2. Make (optional)
 
-* System dependencies
+The Makefile inside the project have some commands to interact with the development stack.
 
-* Configuration
+## Usage
 
-* Database creation
+To run the app you can run:
 
-* Database initialization
+`docker-compose up`
 
-* How to run the test suite
+or
 
-* Services (job queues, cache servers, search engines, etc.)
+`make app.start`
 
-* Deployment instructions
+## Utilities
 
-* ...
+1. `make app.start`: Shut down previous containers and create new ones.
+2. `make app.shell`: Let you acces to the ruby console.
+3. `make docker.build`: Build the ruby image.
+4. `make docker.exec`: Give you access inside ruby container.
+
+You can check the makefile to see the equivalent commands if you don't have make installed in your system.
