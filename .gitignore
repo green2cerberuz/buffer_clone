@@ -32,3 +32,5 @@
 .env*.*
 .ash_history
 .irb_history
+
+/config/credentials/development.key
