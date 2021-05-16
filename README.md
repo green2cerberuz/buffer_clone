@@ -12,9 +12,14 @@ to launch the app and begin to develop.
 
 The Makefile inside the project have some commands to interact with the development stack.
 
-## Usage
+## Usage 
 
-To run the app you can run:
+Create an .env file in the root directory with the following variables
+
+POSTGRES_USER=ruby_user
+POSTGRES_PASSWORD=<your_password>
+
+Then run the app with:
 
 `docker-compose up`
 
